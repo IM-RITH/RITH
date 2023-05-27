@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>V_RITH</title>
+    <link rel="stylesheet" href="style.css">
+    <!--  awesome icons link -->
+    <script src="https://kit.fontawesome.com/b7bd6dd787.js" crossorigin="anonymous"></script>
+    <!--  google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Khmer&family=Noto+Serif+Khmer:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <!-- header start -->
+    <header>
+        <!-- link particle js -->
+        <a href="#" class="logo"><span>R</span>ITH <hr></a>
+        <div class="bar-menu">
+            <i class="fa-solid fa-bars fa-lg" id="fa-bars"></i>
+        </div>
+        <ul class="navbar">
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li onclick="to_explore()"><a href="#explore">EXPLORE</a></li>
+            <li><a href="#contact">LEARN TO CODE</CODE></a></li>
+        </ul>
+    </header>
+    <!-- home start -->
+    <section class="home" id="home">
+        <div class="home_text">
+            <h3>ស្វាគមន៍<span class="bros_srey">លោកយាយ លោកតា</span>មកកាន់គេហទំព័រ</h3>
+            <h1>ប្រុសស្មោះ<span> រិទ្ធិ</span></h1>
+            <h3>ស្មោះអស់ពី<span class="jit">ចិត្ត</h3>
+            <!--<div class="scrolldown">
+                <h3 class="scroll">Scroll<span id="down"> Down</span></h3>
+                </div>
+            -->
+        </div>
+        <div class="button">
+            <ul class="button1">
+                <li><a href="https://www.facebook.com/VANRITH.H"><i class="fa fa-facebook fa-beat"></i></a></li>
+                <li><a href="https://www.instagram.com/v_rithh/?next=%2F"><i class="fa fa-instagram fa-beat"></i></a></li>
+                <li><a href="https://github.com/IM-RITH"><i class="fa fa-github fa-beat"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- start about us -->
+    <section class="about" id="about">
+        <div class="about_background">
+            <img src="Personal Image.jpg">
+        </div>
+        <div class="about_text">
+            <h2> About Me</h2>
+            <p>សួស្ដីអ្នកទាំងអស់គ្នា! ខ្ញុំ <span>សុវណ្ណរិទ្ធិ</span> បច្ចុប្បន្នជានិស្សិតដែលកំពុងសិក្សាកម្រិតបរិញ្ញាបត្រ ឆ្នាំទី ៣ ជំនាញ វិទ្យាសាស្រ្តកុំព្យូទ័រ នៃសាកលវិទ្យាល័យវិទ្យាសាស្រ្ត និងបច្ចេកវិទ្យាហាណូយ ទីក្រុងហាណូយ ប្រទេសវៀតណាម។ &#9996;&#9996;</p>
+            
+        </div>
+    </section>
+    <!-- link to js  and typed js cdn -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!--  function to explore page  -->
+    <script>
+        function to_explore(){
+            window.location = "explore.html";
+        }
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
+    <script>
+         var typed = new Typed(".bros_srey",{
+            strings:["លោកយាយ លោកតា","កុមារា កុមារី","កញ្ញាៗ ក្រមុំៗ","ញាតិមិត្ត ប្រុសស្រី","ប្រុសស្អាត ស្រីស្អាត"],
+            typedSpeed:100,
+            backSpeed:200,
+            loop:true,
+        });
+
+        var typed1 = new Typed(".jit", {
+            strings:["ចិត្ត","ប៉ែត","ហួសដល់90"],
+            typedSpeed:150,
+            backSpeed:200,
+            loop:true,
+        })
+        /* var typed2 = new Typed(".Tlerm", {
+            strings:["ថ្លេីម","បេះដូង","បេះត្នោត"],
+            typedSpeed:150,
+            backSpeed:150,
+            loop:true,
+        }) */
+    
+    </script>
+</body>
+</html>
